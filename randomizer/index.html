@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This bullshit was created and is owned by ~Wee,
+     ~Wee says: Dont look at my bullshit, go away -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Wee's Randomizer</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://www.myshitbroke.wtf/img/logoT.png">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    
+
+
+    <header>
+        <nav>
+            
+            <img src="https://www.myshitbroke.wtf/img/logoT.png" alt="https://www.myshitbroke.wtf/img/logoT.png"
+                style="max-width: 250px; position: relative; ; display: inline-block;">
+            <div>My Other Useless Websites</div>
+            <ul style="list-style: none;">
+                <a href="https://myshitbroke.wtf" target="_blank">
+                    <li>myshitbroke.wtf</li>
+                </a>
+                <a href="https://fakefile.zip" target="_blank">
+                    <li>fakefile.zip</li>
+                </a>
+            </ul>
+            
+        </nav>
+
+    </header>
+
+    <h1 class="welcome" style="text-align: center;">Welcome to Wee's Randomizer</h1>
+
+    <section class="chubb">
+        <p style="text-align: center;">This bullshit is some bullshit that once did bullshit in python, now coz I'm a nerd, it's in html/js with
+            basically no differences</p>
+
+        <p>
+        <div>What is your question?</div>
+        <input type="text" name="question" id="question" Placeholder="Is Wee the greatest coder of all time?">
+        </p>
+
+        <p>
+        <h3>Options</h3>
+        <div id="formfield">
+            <input type="text" class="options" placeholder="No">
+            <input type="text" class="options" placeholder="Hell No">
+        </div>
+        <button id="optionBtn" onclick="add()">More Options</button>
+        <button id="optionBtn" onclick="remove()">Less Options</button>
+
+        </p>
+
+
+
+        <p>
+        <div>How Many Iterations?</div>
+        <input type="number" name="itr" id="itr" inputmode="numeric" min="100" max="100000" value="1000">
+        </p>
+        <button onclick="getResults()">Submit</button>  <br><br>
+
+        <p id="output" class="output" hidden>
+             <!-- output.removeAttribute('hidden') -->
+
+        <script src="script.js"></script>
+    </section>
+
+</body>
+
+</html>
