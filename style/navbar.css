@@ -1,0 +1,50 @@
+  header nav{
+    margin: 1em;
+    color: azure;
+    width: 100%;
+    top: 0;
+    background-color: #2b2b2b;
+    margin-bottom: 3em;
+    
+  }
+
+  header div{
+    padding: none;
+  }
+
+  header img{
+    padding-right: 1em;
+    float: left;
+    max-height: 100px;
+  }
+
+  header ul{
+    display: inline-block;
+    color: azure;
+    padding:0;
+    max-width: 30%;
+
+  }
+
+  
+
+  header ul li{
+    background-color: #555;
+    display: inline-block;
+    margin: none;
+    padding: 0.5em;
+    border: solid 1px azure;
+    border-radius: 1em;
+    padding: 0.5em;
+  }
+
+  header ul li:hover{
+          background-color: #444;
+          color: #2691d9;
+          transition: 1s;
+  }
+
+  header ul a{
+    text-decoration: none;
+    color: azure;
+  }

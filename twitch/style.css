@@ -39,7 +39,7 @@
         }
 
         .grid a, .btn{
-        background-color: azure;
+        background-color: #ddd;
         display: inline-block;
         margin: none;
         padding: 0.5em;
