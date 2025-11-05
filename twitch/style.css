@@ -1,0 +1,84 @@
+
+
+       :root{
+            --bg:#2b2b2b;
+            --card-bg:#fff;
+            --gap:16px;
+            --max-width:1200px;
+        }
+        html,body{height:100%;margin:0;}
+        body{
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background:var(--bg);
+            color:#eee;
+            display:flex;
+            justify-content:center;
+            padding:20px;
+        }
+
+        .page{
+            width:100%;
+            max-width:var(--max-width);
+        }
+
+        /* NAV basic layout — small rules only (navbar.css will be loaded last to enforce priority) */
+        header{
+            margin-bottom:20px;
+        }
+
+        /* iframe grid: two columns on medium+ screens, down to one column on small screens.
+           New rows will be added as iframes are added (expands downward). */
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(2, 1fr);
+            gap:var(--gap);
+            align-items:start;
+        }
+        @media (max-width:760px){
+            .grid{grid-template-columns:1fr;}
+        }
+
+        .grid a, .btn{
+        background-color: azure;
+        display: inline-block;
+        margin: none;
+        padding: 0.5em;
+        border: solid 1px #555;
+        margin: 1em;
+        border-radius: 1em;
+        padding: 0.5em;
+        text-decoration: none;
+        color: inherit;
+        }
+
+        .grid a:hover, .btn:hover{
+            background-color: #cccccc;
+            /* color: #; */
+            transition: 0.5s;
+            font-size: larger;
+        }
+
+        .card{
+            background:var(--card-bg);
+            border-radius:8px;
+            overflow:hidden;
+            box-shadow:0 6px 18px rgba(0,0,0,0.3);
+            color:#222;
+            display:flex;
+            flex-direction:column;
+        }
+
+        /* responsive iframe container using aspect-ratio; expands vertically if content requires */
+        .video-wrap{
+            width:100%;
+            aspect-ratio:16/9;
+            background:#000;
+        }
+        .card .meta{
+            padding:10px 12px;
+            font-size:14px;
+            color:#444;
+        }
+
+        /* small utility */
+        h1,h2{margin:8px 0 0 0;color:#fff;}

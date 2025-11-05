@@ -1,0 +1,106 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Streamer Nerds - Redesigned</title>
+    <link rel="icon" type="image/x-icon" href="https://www.myshitbroke.wtf/img/logoT.png">
+
+    <!-- site-wide styles (keep first so navbar.css can override) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- component styles: layout / grid / iframe sizing -->
+    <style>
+
+    </style>
+
+    <!-- load navbar.css last so it overrides any earlier rules (enforces priority) -->
+    <link rel="stylesheet" href="/style/navbar.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <nav class="site-nav" aria-label="Main navigation">
+                <div class="brand-row">
+                    <a href="https://weelittlewebsites.com/" target="_blank" class="logo-link" aria-label="Wee Little Websites home">
+                        <img src="https://www.myshitbroke.wtf/img/logoT.png" alt="logo">
+                    </a>
+                    <div>
+                        <h2 style="margin:0;color:#fff;">My Other Useless Websites</h2>
+                    </div>
+                </div>
+
+                <!-- <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="navbar-ul">☰</button> -->
+
+                <ul id="navbar-ul" class="nav-links" style="display:flex;gap:12px;">
+                    <li><a href="https://weelittlewebsites.com/" target="_blank" rel="noopener">Home</a></li>
+                    <li><a href="https://myshitbroke.wtf" target="_blank" rel="noopener">myshitbroke.wtf</a></li>
+                    <li><a href="https://fakefile.zip" target="_blank" rel="noopener">fakefile.zip</a></li>
+                </ul>
+            </nav>
+            <h3><a style="background-color: inherit;" class="btn" href="https://australianarmedforces.org">This was gonna be some shit for AAF - see here why it isn't</a></h3>
+            
+            <br><h1>Streamer Nerds</h1><br>
+        </header>
+
+        <main class="page">
+
+            <section class="grid" aria-live="polite">
+                <article class="card">
+                    <div class="video-wrap">
+                        <iframe src="https://player.twitch.tv/?channel=sirwee&parent=weelittlewebsites.com"
+                                title="sirwee stream" frameborder="0" allowfullscreen
+                                style="width:100%;height:100%;border:0;display:block;"></iframe>
+                    </div>
+                    <div class="meta">The Dude: <a href="https://twitch.tv/sirwee">SirWee</a></div>
+                </article>
+
+                <article class="card">
+                    <div class="video-wrap">
+                        <iframe src="https://player.twitch.tv/?channel=ferretsoftware&parent=weelittlewebsites.com"
+                                title="another channel" frameborder="0" allowfullscreen
+                                style="width:100%;height:100%;border:0;display:block;"></iframe>
+                    </div>
+                    <div class="meta">Channel:<a href="https://www.twitch.tv/ferretsoftware">Piratesoftware</a>for funzies and/or testing idk</div>
+                </article>
+
+                <article class="card">
+                    <div class="video-wrap">
+                        <iframe src="https://player.twitch.tv/?channel=thirdchannel&parent=weelittlewebsites.com"
+                                title="third channel" frameborder="0" allowfullscreen
+                                style="width:100%;height:100%;border:0;display:block;"></iframe>
+                    </div>
+                    <div class="meta">Channel: thirdchannel</div>
+                </article>
+
+                <article class="card">
+                    <div class="video-wrap">
+                        <iframe src="https://player.twitch.tv/?channel=fourthchannel&parent=weelittlewebsites.com"
+                                title="fourth channel" frameborder="0" allowfullscreen
+                                style="width:100%;height:100%;border:0;display:block;"></iframe>
+                    </div>
+                    <div class="meta">Channel: fourthchannel</div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // basic nav toggle for small screens
+        (function(){
+            const btn = document.getElementById('nav-toggle');
+            const nav = document.getElementById('navbar-ul');
+            if(!btn || !nav) return;
+            btn.addEventListener('click', ()=> {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!expanded));
+                // simple class toggle; navbar.css should define .open or similar to make it visible on mobile
+                nav.classList.toggle('open');
+            });
+        })();
+    </script>
+</body>
+</html>
