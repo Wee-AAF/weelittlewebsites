@@ -25,7 +25,8 @@
         <header>
             <nav class="site-nav" aria-label="Main navigation">
                 <div class="brand-row">
-                    <a href="https://weelittlewebsites.com/" target="_blank" class="logo-link" aria-label="Wee Little Websites home">
+                    <a href="https://weelittlewebsites.com/" target="_blank" class="logo-link"
+                        aria-label="Wee Little Websites home">
                         <img src="https://www.myshitbroke.wtf/img/logoT.png" alt="logo">
                     </a>
                     <div>
@@ -41,9 +42,11 @@
                     <li><a href="https://fakefile.zip" target="_blank" rel="noopener">fakefile.zip</a></li>
                 </ul>
             </nav>
-            <h3><a style="background-color: inherit;" class="btn" href="https://australianarmedforces.org">This was gonna be some shit for AAF - see here why it isn't</a></h3>
-            
-            <br><h1>Streamer Nerds</h1><br>
+            <h3><a style="background-color: inherit;" class="btn" href="https://australianarmedforces.org">This was
+                    gonna be some shit for AAF - see here why it isn't</a></h3>
+
+            <br>
+            <h1>Streamer Nerds</h1><br>
         </header>
 
         <main class="page">
@@ -52,37 +55,39 @@
                 <article class="card">
                     <div class="video-wrap">
                         <iframe src="https://player.twitch.tv/?channel=sirwee&parent=weelittlewebsites.com"
-                                title="sirwee stream" frameborder="0" allowfullscreen
-                                style="width:100%;height:100%;border:0;display:block;"></iframe>
+                            title="sirwee stream" frameborder="0" allowfullscreen
+                            style="width:100%;height:100%;border:0;display:block;"></iframe>
                     </div>
                     <div class="meta">The Dude: <a href="https://twitch.tv/sirwee">SirWee</a></div>
                 </article>
 
                 <article class="card">
                     <div class="video-wrap">
-                        <iframe src="https://player.twitch.tv/?channel=ferretsoftware&parent=weelittlewebsites.com"
-                                title="another channel" frameborder="0" allowfullscreen
-                                style="width:100%;height:100%;border:0;display:block;"></iframe>
+                        <iframe src="https://player.twitch.tv/?channel=hulksey20&parent=weelittlewebsites.com"
+                            title="third channel" frameborder="0" allowfullscreen
+                            style="width:100%;height:100%;border:0;display:block;"></iframe>
                     </div>
-                    <div class="meta">Channel:<a href="https://www.twitch.tv/ferretsoftware">FerretSoftware</a>for funzies and/or testing idk ferrets are cool</div>
+                    <div class="meta">Channel: Lidman Sam Himself<a href="https://twitch.tv/hulksey20">Hulksey</a>
+                    </div>
                 </article>
 
                 <article class="card">
                     <div class="video-wrap">
-                        <iframe src="https://player.twitch.tv/?channel=thirdchannel&parent=weelittlewebsites.com"
-                                title="third channel" frameborder="0" allowfullscreen
-                                style="width:100%;height:100%;border:0;display:block;"></iframe>
+                        <iframe src="https://player.twitch.tv/?channel=ferretsoftware&parent=weelittlewebsites.com"
+                            title="another channel" frameborder="0" allowfullscreen
+                            style="width:100%;height:100%;border:0;display:block;"></iframe>
                     </div>
-                    <div class="meta">Channel: thirdchannel</div>
+                    <div class="meta">Channel:<a href="https://www.twitch.tv/ferretsoftware">FerretSoftware</a>for
+                        funzies and/or testing idk ferrets are cool</div>
                 </article>
 
                 <article class="card">
                     <div class="video-wrap">
                         <iframe src="https://player.twitch.tv/?channel=fourthchannel&parent=weelittlewebsites.com"
-                                title="fourth channel" frameborder="0" allowfullscreen
-                                style="width:100%;height:100%;border:0;display:block;"></iframe>
+                            title="fourth channel" frameborder="0" allowfullscreen
+                            style="width:100%;height:100%;border:0;display:block;"></iframe>
                     </div>
-                    <div class="meta">Channel: fourthchannel</div>
+                    <div class="meta">Channel: fourthchannel TBD</div>
                 </article>
             </section>
         </main>
@@ -90,11 +95,11 @@
 
     <script>
         // basic nav toggle for small screens
-        (function(){
+        (function () {
             const btn = document.getElementById('nav-toggle');
             const nav = document.getElementById('navbar-ul');
-            if(!btn || !nav) return;
-            btn.addEventListener('click', ()=> {
+            if (!btn || !nav) return;
+            btn.addEventListener('click', () => {
                 const expanded = btn.getAttribute('aria-expanded') === 'true';
                 btn.setAttribute('aria-expanded', String(!expanded));
                 // simple class toggle; navbar.css should define .open or similar to make it visible on mobile
@@ -103,4 +108,5 @@
         })();
     </script>
 </body>
+
 </html>
